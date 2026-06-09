@@ -1,44 +1,46 @@
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    
+}
+
+.feature-card-container {
+    background-color: #f8f9fa;
+    border: 1px solid #3b3636;
+    border-radius: 8px;
+    padding: 20px ;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: block;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #8d57c6, #558ded);
-    margin: 0;
-    padding: 150px;
-}
-
-.form-container {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    width: 100%;
-    max-width: 500px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     margin: 0 auto;
+    padding: 20px;
     text-align: center;
+    
 }
 
-label {
-    display: block;
-    margin: 5px;
-    color: #333;
-}
-
-input, textarea {
-    width: 80%;
-    padding: 10px ;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
